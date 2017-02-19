@@ -2039,5 +2039,19 @@ body {
       left: 50%;
       -webkit-transform: translateY(25px) translateX(-25px);
               transform: translateY(25px) translateX(-25px); }
-  body div.content {
-    background-color: green; }
+  body div.content .articles .article-wrapper {
+    background-color: whitesmoke; }
+    body div.content .articles .article-wrapper article {
+      padding: 80px 80px;
+      padding-top: 130px; }
+      body div.content .articles .article-wrapper article .a-title {
+        height: 150px;
+        padding: 40px 0; }
+      body div.content .articles .article-wrapper article .a-text {
+        height: 200px; }
+      body div.content .articles .article-wrapper article .action .read {
+        padding: 10px; }
+        body div.content .articles .article-wrapper article .action .read:hover {
+          background-color: yellow; }
+          body div.content .articles .article-wrapper article .action .read:hover:after {
+            content: ">"; }

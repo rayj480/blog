@@ -88,6 +88,35 @@ body {
     }
 
     div.content{
-        background-color: green;
+
+        .articles{
+            .article-wrapper{
+                background-color: whitesmoke;
+                article{
+                    padding: 80px 80px; 
+                    padding-top: 130px; 
+                    .a-date{
+                    }
+                    .a-title{
+                        height: 150px;
+                        padding: 40px 0;
+                    }
+                    .a-text{
+                        height: 200px;
+                    }
+                    .action{
+                        .read{
+                            padding: 10px;
+                            &:hover{
+                                background-color: yellow;
+                                &:after{
+                                    content: ">";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
