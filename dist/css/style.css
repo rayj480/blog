@@ -2039,5 +2039,5 @@ body {
       left: 50%;
       -webkit-transform: translateY(25px) translateX(-25px);
               transform: translateY(25px) translateX(-25px); }
-  body section.content {
+  body div.content {
     background-color: green; }
