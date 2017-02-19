@@ -54,3 +54,40 @@
 // Utility classes
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+/**  Custom **/
+body {
+    height: 100%;
+
+    header{
+        height: 300px; 
+        background-color: red; 
+        position: relative;
+        padding: 0 !important;
+
+        h3{
+            background-color: white; 
+            position:absolute; 
+            bottom: 0;
+            width: 50%;
+            margin: 0; 
+            padding: 20px 0;
+        }
+
+        .tool-button{
+            border:none;
+            height: 50px; 
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            background-color:black;
+            left: 50%;
+            transform: translateY(25px) translateX(-25px);
+        }
+    }
+
+    section.content{
+        background-color: green;
+    }
+}
