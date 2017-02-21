@@ -58,12 +58,16 @@
 /**  Custom **/
 body {
     height: 100%;
-
+    box-sizing: border-box;
     header{
-        height: 300px; 
-        background-color: red; 
+        z-index: 10;
+        height: 450px; 
         position: relative;
         padding: 0 !important;
+        background-position: center;
+        background-size: cover ;
+        opacity: 0.7;
+        background-color: whitesmoke;
 
         h3{
             background-color: white; 
@@ -72,6 +76,10 @@ body {
             width: 50%;
             margin: 0; 
             padding: 20px 0;
+            padding-left: 50px;
+            font-family: 'Bahiana', cursive;
+            font-size: 32px;
+            box-shadow: 0px 6px 23px -7px rgba(0,0,0,0.75);
         }
 
         .tool-button{
@@ -87,30 +95,67 @@ body {
         }
     }
 
-    div.content{
+    .content-wrapper{
+        height: 70%;
+        div.content{
+            .articles{
+                .article-wrapper{
+                    background-color: ghostwhite;
+                    article{
+                        padding: 50px 60px; 
+                        padding-top: 50px; 
 
-        .articles{
-            .article-wrapper{
-                background-color: whitesmoke;
-                article{
-                    padding: 80px 80px; 
-                    padding-top: 130px; 
-                    .a-date{
-                    }
-                    .a-title{
-                        height: 150px;
-                        padding: 40px 0;
-                    }
-                    .a-text{
-                        height: 200px;
-                    }
-                    .action{
-                        .read{
-                            padding: 10px;
-                            &:hover{
-                                background-color: yellow;
-                                &:after{
-                                    content: ">";
+
+                        &>div:first-child{
+                            position: relative;
+                            .bann{
+                                position: absolute;
+                                width: 50%;
+                                rect{
+                                    z-index:0;
+                                    width:100%;
+                                    height:100%;
+                                    opacity: 0;
+                                    fill: ghostwhite;
+                                    transition: fill 1s;
+                                }
+                            }
+                        }
+
+                        &:hover{
+                            &>div:first-child{
+                                .bann{
+                                    rect{
+                                        opacity: 0.3;
+                                        fill: cadetblue;
+                                    }
+                                }
+                            }
+                        }
+                        .a-date{
+                            color: gray;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                        }
+                        .a-title{
+                            height: 150px;
+                            padding: 40px 0;
+                            font-weight: 700;
+                            font-size: 28px;
+                        }
+                        .a-text{
+                            height: 200px;
+                            text-align: justify;
+                        }
+                        .action{
+                            .read{
+                                padding: 15px 40px;
+                                transition: background-color 1s;
+                                &:hover{
+                                    background-color: goldenrod;
+                                    &:after{
+                                        content: ">";
+                                    }
                                 }
                             }
                         }
