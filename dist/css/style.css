@@ -2048,6 +2048,57 @@ body {
       left: 50%;
       -webkit-transform: translateY(25px) translateX(-25px);
               transform: translateY(25px) translateX(-25px); }
+  body .jc-article-selector ul {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 84px;
+    position: fixed;
+    right: 30px;
+    list-style: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    box-sizing: border-box; }
+    body .jc-article-selector ul li {
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      margin: 10px 5px;
+      border-radius: 50%;
+      font-size: 0px;
+      background-color: #333; }
+  body .function-wrapper section {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    body .function-wrapper section .jc-tag {
+      padding: 20px;
+      border: 1px solid dodgerblue;
+      margin: 10px;
+      -webkit-transition: background-color 0.2s, color 0.2s;
+      transition: background-color 0.2s, color 0.2s; }
+      body .function-wrapper section .jc-tag:hover {
+        background-color: dodgerblue;
+        color: whitesmoke; }
+        body .function-wrapper section .jc-tag:hover .jc-blue {
+          background-color: dodgerblue;
+          color: whitesmoke;
+          border-color: dodgerblue; }
+        body .function-wrapper section .jc-tag:hover .jc-red {
+          background-color: rebeccapurple;
+          color: whitesmoke;
+          border-color: rebeccapurple; }
+        body .function-wrapper section .jc-tag:hover .jc-green {
+          background-color: lightgreen;
+          color: whitesmoke;
+          border-color: lightgreen; }
+        body .function-wrapper section .jc-tag:hover .jc-yellow {
+          background-color: darkgoldenrod;
+          color: white;
+          border-color: darkgoldenrod; }
   body .content-wrapper {
     height: 70%; }
     body .content-wrapper div.content .articles .article-wrapper {

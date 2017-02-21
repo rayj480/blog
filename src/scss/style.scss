@@ -95,6 +95,66 @@ body {
         }
     }
 
+    .jc-article-selector{
+    ul{
+        margin: 0; 
+        padding: 0;
+        display:flex;
+        width: 84px;
+        position: fixed; 
+        right: 30px;
+        list-style: none;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        li{
+            box-sizing: border-box;
+            width: 30px; 
+            height: 30px;
+            margin: 10px 5px;
+            border-radius: 50%;
+            font-size: 0px;
+            background-color: #333;
+        }
+    }}
+
+    .function-wrapper{
+        
+        section{
+            padding: 30px;
+            display:flex;
+            .jc-tag{
+                padding: 20px; 
+                border: 1px solid dodgerblue;
+                margin: 10px;
+                transition: background-color 0.2s, color 0.2s;
+                &:hover{
+                    background-color: dodgerblue; 
+                    color: whitesmoke;
+                    .jc-blue{
+                        background-color: dodgerblue; 
+                        color: whitesmoke;
+                        border-color: dodgerblue;
+                    }
+                    .jc-red{
+                        background-color: rebeccapurple; 
+                        color: whitesmoke;
+                        border-color: rebeccapurple;
+                    }
+                    .jc-green{
+                        background-color: lightgreen; 
+                        color: whitesmoke;
+                        border-color: lightgreen;
+                    }
+                    .jc-yellow{
+                        background-color: darkgoldenrod; 
+                        color: white;
+                        border-color: darkgoldenrod;
+                    }
+                }
+            }
+        }
+    }
+
     .content-wrapper{
         height: 70%;
         div.content{
@@ -164,4 +224,4 @@ body {
             }
         }
     }
-}
+    }
